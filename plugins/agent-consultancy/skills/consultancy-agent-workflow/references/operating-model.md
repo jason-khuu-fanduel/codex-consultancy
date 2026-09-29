@@ -71,7 +71,7 @@ A successful one-off alone is insufficient. If an existing skill already covers 
 
 ## Durable state
 
-Use `.codex/consultancy/operating-log.md` in writable projects; for intentionally read-only tasks, keep equivalent state in task context and provide a concise handoff. Maintain:
+Use a durable state file at `.agent-consultancy/operating-log.md` in writable projects, or the host's own conventional location for durable working state if it has one; for intentionally read-only tasks, keep equivalent state in task context and provide a concise handoff. Maintain:
 
 ```text
 Current outcome and acceptance criteria:

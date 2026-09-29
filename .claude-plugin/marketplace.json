@@ -1,0 +1,16 @@
+{
+  "name": "agent-consultancy",
+  "owner": {
+    "name": "Adam Ni",
+    "url": "https://github.com/AdamNi-7080"
+  },
+  "description": "Adaptive, manager-led specialist delivery for multi-agent engagements.",
+  "plugins": [
+    {
+      "name": "agent-consultancy",
+      "source": "./plugins/agent-consultancy",
+      "description": "Adaptive specialist delivery with evidence-based acceptance and proportionate coordination.",
+      "category": "Productivity"
+    }
+  ]
+}

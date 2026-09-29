@@ -6,7 +6,7 @@ Use this reference when unresolved choices materially affect scope, product dire
 
 The Manager owns user questions and scope decisions. Delegates can research options and identify missing decisions. Preserve explicit goals, constraints, and settled preferences. Treat factual claims and proposed solutions as hypotheses where evidence could change feasibility or delivery, without reopening an explicit technology choice merely to suggest alternatives.
 
-Ask only questions whose answers materially change the plan and cannot be established by inspection. Continue independent authorized work while awaiting answers. Use the question tools and collaboration mode actually available; a skill cannot switch the host into Plan mode.
+Ask only questions whose answers materially change the plan and cannot be established by inspection. Continue independent authorized work while awaiting answers. Use the question tools and collaboration mode actually available; a skill cannot switch the host into a different collaboration or approval mode on its own.
 
 Proportionate research can test feasibility, relevant operational/accessibility/security/maintenance risks, a credible alternative, and what would change the recommendation. Separate confirmed evidence, inference, and remaining proof; avoid overlapping challenge roles without a concrete purpose.
 
@@ -18,6 +18,6 @@ For communications, establish audience, destination, and whether a draft or actu
 
 Continue through authorized milestones, recovery, and verification. Return to the user when a necessary decision or authorization is missing, not simply because a milestone finished. Update decisions and ownership in the operating log.
 
-Create a persistent Goal only on an explicit user request for one. Do not infer that request from ordinary instructions to finish or continue. If requested, define the end state, constraints, verifiable completion criteria, and stopping conditions; follow the live Goal tool's rules for status changes and budgets. A Goal does not expand authority.
+Create a persistent goal only on an explicit user request for one. Do not infer that request from ordinary instructions to finish or continue. If requested, define the end state, constraints, verifiable completion criteria, and stopping conditions; if the host provides a persistent-task or goal-tracking tool, follow its live rules for status changes and budgets. A persistent goal does not expand authority.
 
 Have the integration and independent acceptance owners verify their outputs, then synthesize the evidence and disclose residual uncertainty. Follow the operating model's handoff and skill reuse checks.

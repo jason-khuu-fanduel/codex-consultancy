@@ -1,0 +1,13 @@
+{
+  "name": "agent-consultancy",
+  "displayName": "Agent Consultancy",
+  "version": "0.1.1",
+  "description": "Adaptive specialist delivery with evidence-based acceptance and proportionate coordination.",
+  "author": {
+    "name": "Adam Ni",
+    "url": "https://github.com/AdamNi-7080"
+  },
+  "homepage": "https://github.com/AdamNi-7080/codex-consultancy",
+  "repository": "https://github.com/AdamNi-7080/codex-consultancy",
+  "keywords": ["consultancy", "planning", "research", "delivery", "quality"]
+}
