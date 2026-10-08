@@ -1,0 +1,108 @@
+{
+  "decisions": [
+    {
+      "id": "inherit",
+      "action": "inherit",
+      "model": "inherited",
+      "effort": "inherited",
+      "fork": "all",
+      "reason": "Parent workhorse/medium fits cheap deterministic verification; full inherited context preserves required decisions.",
+      "user_update": null,
+      "preserve_work": true,
+      "claim_slot_freed": false,
+      "retry_without_change": false,
+      "independent_acceptance": true
+    },
+    {
+      "id": "promote",
+      "action": "promote",
+      "model": "workhorse",
+      "effort": "high",
+      "fork": "none",
+      "reason": "Material reasoning failure warrants fresh higher-capability, higher-effort replacement with valid artifacts, failed criterion and concise failure evidence.",
+      "user_update": "The delivery agent failed acceptance through reasoning errors. I’m promoting recovery from fast/low to workhorse/high and carrying forward valid work.",
+      "preserve_work": true,
+      "claim_slot_freed": false,
+      "retry_without_change": false,
+      "independent_acceptance": true
+    },
+    {
+      "id": "tool_failure",
+      "action": "repair_inputs",
+      "model": "frontier",
+      "effort": "high",
+      "fork": null,
+      "reason": "Correct the known wrong path and retry the required read; model promotion cannot fix missing inputs.",
+      "user_update": null,
+      "preserve_work": true,
+      "claim_slot_freed": false,
+      "retry_without_change": false,
+      "independent_acceptance": true
+    },
+    {
+      "id": "reuse",
+      "action": "reuse",
+      "model": "workhorse",
+      "effort": "medium",
+      "fork": null,
+      "reason": "Reuse the idle delivery agent with a replacement brief: related parser repair, suitable runtime and tools, handed-off work and no conflicting assumptions.",
+      "user_update": null,
+      "preserve_work": true,
+      "claim_slot_freed": false,
+      "retry_without_change": false,
+      "independent_acceptance": true
+    },
+    {
+      "id": "independence",
+      "action": "fresh_acceptance",
+      "model": "inherited",
+      "effort": "inherited",
+      "fork": "none",
+      "reason": "Hire a separate acceptance owner who did not implement the artifact; give artifact and criteria for independent checks and reassess runtime against required judgment.",
+      "user_update": null,
+      "preserve_work": true,
+      "claim_slot_freed": false,
+      "retry_without_change": false,
+      "independent_acceptance": true
+    },
+    {
+      "id": "exhausted",
+      "action": "report_blocker",
+      "model": null,
+      "effort": null,
+      "fork": null,
+      "reason": "No release action or suitable reuse can launch required promoted recovery or independent acceptance; preserve handoff and do not repeat unchanged spawn attempts.",
+      "user_update": "All retained agent slots are used. This runtime cannot release them, and interruption does not free a slot. Promoted recovery and independent acceptance are blocked; valid work and the handoff are preserved.",
+      "preserve_work": true,
+      "claim_slot_freed": false,
+      "retry_without_change": false,
+      "independent_acceptance": true
+    },
+    {
+      "id": "release",
+      "action": "release_then_spawn",
+      "model": "inherited",
+      "effort": "inherited",
+      "fork": "none",
+      "reason": "Preserve completed artifacts and handoff, close dependency-free completed agent, verify reported slot release, then launch separate acceptance owner.",
+      "user_update": "The completed agent can be released. I’ll verify the freed slot before launching independent acceptance.",
+      "preserve_work": true,
+      "claim_slot_freed": true,
+      "retry_without_change": false,
+      "independent_acceptance": true
+    },
+    {
+      "id": "contamination",
+      "action": "fresh",
+      "model": "inherited",
+      "effort": "inherited",
+      "fork": "none",
+      "reason": "Fresh independent security judgment avoids repeated disproven assumptions; pass accepted evidence and explicitly exclude invalid assumptions, reassessing runtime for security judgment.",
+      "user_update": null,
+      "preserve_work": true,
+      "claim_slot_freed": false,
+      "retry_without_change": false,
+      "independent_acceptance": true
+    }
+  ]
+}

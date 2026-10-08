@@ -32,7 +32,7 @@ Map the complete team from outputs and risk boundaries before spawning, includin
 - Select a Technical writer only when the deliverable needs durable user, operator, API, or decision documentation; do not use one to restate unsettled findings.
 - Before inventing a role, check relevant project instructions, existing skills, available tools, and known workflow conventions. Reuse a project-specific capability when it fits; if a delegated role depends on that skill, its brief must require loading it before acting. Do not invent a generic persona that duplicates it.
 - Where two candidates seem plausible, prefer the one that can own the smallest decision-changing output with the least handoff cost. Check required access and whether the candidate's prior involvement would compromise independent acceptance. If both roles need the same inputs and would return the same evidence, hire one and refine its brief.
-- If the menu lacks a good fit, write a task-specific persona from the template below. If the task itself does not reveal the expertise needed, consider a bounded Role scout assignment only if the Manager cannot resolve the gap efficiently; it recommends a role and brief. A separate fresh agent owns any later delivery assignment.
+- If the menu lacks a good fit, write a task-specific persona from the template below. If the task itself does not reveal the expertise needed, consider a bounded Role scout assignment only if the Manager cannot resolve the gap efficiently; it recommends a role and brief. Compare a fresh delivery hire with safe reuse using the operating model; retain separate independent acceptance.
 - Create a persistent custom agent only after a role pattern has repeated, has stable non-obvious instructions, and cannot be represented as a concise engagement brief. Otherwise use the transient role and the skill's existing reuse pre-check.
 
 ## Persona and brief template
@@ -56,7 +56,7 @@ Return format: <the applicable result-contract fields, concise>
 Stop/escalate: <missing access, conflicting evidence, scope expansion, or repeated failed check that requires handoff>
 ```
 
-When inventing a persona, use the task's domain, decision, failure modes, and acceptance evidence. Derive job level from the assignment's autonomy, ambiguity, and consequence, not decorative seniority or a generic "expert" label. Apply that level's model and effort floor from [model-allocation.md](model-allocation.md).
+When inventing a persona, use the task's domain, decision, failure modes, and acceptance evidence. Derive job level from the assignment's autonomy, ambiguity, and consequence, not decorative seniority or a generic "expert" label. Select a task-appropriate runtime using the live capabilities and hiring criteria from [model-allocation.md](model-allocation.md).
 
 ## Result contract
 

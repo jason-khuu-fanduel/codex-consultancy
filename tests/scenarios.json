@@ -1,0 +1,54 @@
+{
+  "format": {
+    "decisions": [
+      {
+        "id": "scenario id",
+        "action": "inherit|promote|repair_inputs|reuse|fresh_acceptance|report_blocker|release_then_spawn|fresh",
+        "model": "inherited or selected name or null",
+        "effort": "inherited or selected value or null",
+        "fork": "all|none|partial|null",
+        "preserve_work": true,
+        "claim_slot_freed": false,
+        "retry_without_change": false,
+        "independent_acceptance": true,
+        "reason": "short rationale",
+        "user_update": "short user-facing update or null"
+      }
+    ]
+  },
+  "runtime": "Treat each scenario as an isolated simulation. Do not actually spawn, close, interrupt, or contact services. Return structured decisions only.",
+  "scenarios": [
+    {
+      "id": "inherit",
+      "request": "Staff a bounded deterministic file conversion with cheap verification. Parent is workhorse/medium. Live models: fast (prescribed easy tasks), workhorse (routine delivery), frontier (hard judgment); all support low, medium, high. No evidence favors an override. Full context contains required decisions. Decide delivery runtime and context."
+    },
+    {
+      "id": "promote",
+      "request": "A fast/low delivery agent materially failed acceptance through reasoning errors. Inputs and tools are complete. workhorse and frontier are available and support medium/high. Capacity allows a replacement. Choose recovery and carry-forward evidence."
+    },
+    {
+      "id": "tool_failure",
+      "request": "A frontier/high agent cannot read a required file because its path is wrong. The correct path is known. Decide the next action."
+    },
+    {
+      "id": "reuse",
+      "request": "An idle workhorse/medium delivery agent finished and handed off parser work. Next is a related parser repair, same tools and runtime, clear checks, no conflicting assumptions. Slots remain available. Decide reuse or a fresh hire."
+    },
+    {
+      "id": "independence",
+      "request": "An idle agent implemented the artifact and offers to accept it independently. A fresh slot is available. Choose the acceptance owner."
+    },
+    {
+      "id": "exhausted",
+      "request": "Spawn rejected: all retained agent slots used. No close/release API exists. Interrupt stops execution only. No idle agent fits the required promoted runtime or independent acceptance. No capacity change is expected. Choose recovery and user reporting."
+    },
+    {
+      "id": "release",
+      "request": "A completed agent has accepted artifacts and no dependencies. A close_agent API is available; success reports one slot released. A pending independent acceptance hire needs that slot. Decide cleanup and next steps."
+    },
+    {
+      "id": "contamination",
+      "request": "An idle agent has the right runtime but worked from a disproven security assumption and keeps repeating it. New work requires an independent security judgment. A fresh slot is available. Choose reuse or a fresh hire."
+    }
+  ]
+}
