@@ -1,12 +1,12 @@
 # Consultancy Agent Workflow
 
-An installable Codex skill for adaptive, manager-led specialist delivery. The repository, marketplace, and plugin identifier remain `codex-consultancy`.
+An installable, host-agnostic skill for adaptive, manager-led specialist delivery. The plugin and marketplace identifier is `agent-consultancy`. The underlying GitHub repository is still named `codex-consultancy` — renaming the repository itself is a separate step and hasn't been done here.
 
 ## How it works
 
 - Maps the smallest complete team before work starts, with explicit delivery, integration, and independent acceptance ownership.
 - Uses discovery for unresolved material choices and continues already-authorized work without repeated sign-off.
-- Separates ownership levels from runtime selection, choosing available models and effort from task evidence rather than fixed model tiers.
+- Separates job levels — ownership, autonomy, and consequence — from runtime selection, choosing available models and effort from task evidence and whatever the live host actually exposes, rather than a fixed model-tier table.
 - Checks staffing and final handoff, adding independent or intermediate audits when useful.
 - Requires a separate acceptance owner for every engagement, with proportionate checks and explicit uncertainty.
 - Preserves verified partial results and changes approach after repeated failure.
@@ -17,20 +17,44 @@ The Manager coordinates and signs off; specialists deliver the work, with a disc
 
 ## Install
 
+### Codex
+
 Your Codex account needs GitHub access to this repository.
 
 ```sh
 codex plugin marketplace add AdamNi-7080/codex-consultancy
-codex plugin add codex-consultancy@codex-consultancy
+codex plugin add agent-consultancy@agent-consultancy
 ```
 
 Start a new Codex task and invoke `$consultancy-agent-workflow`, or ask for a managed consultancy engagement.
 
+### Claude Code
+
+```sh
+claude plugin marketplace add AdamNi-7080/codex-consultancy
+claude plugin install agent-consultancy@agent-consultancy
+```
+
+Before this repository is pushed, use a local path instead: `claude plugin marketplace add /path/to/codex-consultancy`. Then invoke it the same way — ask for a managed consultancy engagement, or its skill form `consultancy-agent-workflow`. Both manifests pass `claude plugin validate`.
+
+## Portability
+
+The workflow logic itself — staffing, job levels, evidence and acceptance discipline, audits — does not assume any specific model provider or effort vocabulary. [references/model-allocation.md](plugins/agent-consultancy/skills/consultancy-agent-workflow/references/model-allocation.md) resolves concrete models and effort settings from whatever the live host's spawn tool exposes, rather than naming a fixed model family. References to host-specific concepts (a "Plan mode," a "Goal" tool, a particular usage-telemetry call) are phrased so the skill checks what the current host actually provides instead of assuming any one host's own tool names.
+
+The same plugin directory (`plugins/agent-consultancy/`) is packaged for two hosts side by side, and both read the identical `skills/consultancy-agent-workflow/` content:
+
+- **Codex**: `.codex-plugin/plugin.json` + `.agents/plugins/marketplace.json`.
+- **Claude Code**: `plugins/agent-consultancy/.claude-plugin/plugin.json` + `.claude-plugin/marketplace.json` at the repo root.
+
+Adding a third host means writing that host's own manifest format next to these two, pointing at the same plugin directory; the skill content underneath needs no further changes.
+
 ## Update and compatibility
 
-Version 0.1.2 adds adaptive hiring, evidence-based model and effort promotion, proactive safe reuse, and explicit capacity recovery. The skill name remains `consultancy-agent-workflow`. The previous `$consultancy` invocation is replaced by `$consultancy-agent-workflow`; no duplicate alias skill is shipped. Repository, marketplace, and plugin installation identifiers are unchanged.
+Version 0.1.2 adds adaptive hiring, evidence-based model and effort promotion, proactive safe reuse, and explicit capacity recovery, and generalizes the workflow to run on any host rather than assuming Codex's own tool names and model family. The skill name remains `consultancy-agent-workflow`. The previous `$consultancy` invocation is replaced by `$consultancy-agent-workflow`; no duplicate alias skill is shipped.
 
-Refresh your marketplace and update the plugin through your installed Codex plugin management flow, then start a new task to load the revised instructions. This repository update does not itself reinstall plugins or change global configuration.
+The plugin/marketplace identifier changed from `codex-consultancy` to `agent-consultancy`. If you installed the plugin under the old identifier, uninstall it (`codex plugin remove codex-consultancy@codex-consultancy` or `claude plugin uninstall codex-consultancy@codex-consultancy`) and reinstall under the new one above; a marketplace refresh alone does not rename an already-installed plugin.
+
+Refresh your marketplace and update the plugin through your installed plugin management flow, then start a new task to load the revised instructions. This repository update does not itself reinstall plugins or change global configuration.
 
 The workflow instructions can be checked structurally and reviewed against scenarios; improved delivery quality and reduced overhead still need evidence from real engagements.
 

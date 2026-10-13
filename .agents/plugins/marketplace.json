@@ -1,14 +1,14 @@
 {
-  "name": "codex-consultancy",
+  "name": "agent-consultancy",
   "interface": {
-    "displayName": "Codex Consultancy"
+    "displayName": "Agent Consultancy"
   },
   "plugins": [
     {
-      "name": "codex-consultancy",
+      "name": "agent-consultancy",
       "source": {
         "source": "local",
-        "path": "./plugins/codex-consultancy"
+        "path": "./plugins/agent-consultancy"
       },
       "policy": {
         "installation": "AVAILABLE",

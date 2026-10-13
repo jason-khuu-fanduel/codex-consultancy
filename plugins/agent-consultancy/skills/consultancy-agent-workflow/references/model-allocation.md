@@ -14,9 +14,9 @@ For material choices, compare the inherited configuration with the most plausibl
 
 ## Context and spawn configuration
 
-Choose context from the assignment's needs. Use a self-contained brief with `fork_turns="none"` when accepted artifacts and a concise handoff suffice. Use a supported partial fork for relevant recent context, or full inheritance when the conversation contains necessary decisions that are costly to reconstruct. Avoid oversized transcripts, but do not discard essential constraints to force a model override.
+Choose context from the assignment's needs. Use a self-contained brief with no inherited conversation when accepted artifacts and a concise handoff suffice. Use a partial or full context carryover, if the host provides one, for relevant recent context or decisions that are costly to reconstruct. Avoid oversized transcripts, but do not discard essential constraints to force a model override.
 
-Under the current collaboration contract, omitted or `"all"` forks inherit the parent model and effort and cannot accept overrides. For inheritance, omit `model` and `reasoning_effort`; for an authorized override, use `"none"` or a supported positive partial fork and pass only supported settings. Recheck the live contract instead of assuming these rules are permanent. This skill authorizes task-appropriate overrides when invoked, subject to higher-priority instructions.
+On many hosts, inheriting the parent's context also inherits its model and effort and blocks an independent override; check the live tool's contract before relying on inheritance, and recheck it rather than assuming these rules are permanent. This skill authorizes task-appropriate overrides when invoked, subject to higher-priority instructions.
 
 For each distinct assignment, record role, ownership level, chosen or inherited runtime, context choice, owned output, hiring reason, and escalation trigger. Check actual spawn arguments against this decision. Record observed settings only if exposed; requested settings are not proof of the model actually used.
 
