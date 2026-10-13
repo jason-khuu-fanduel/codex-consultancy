@@ -18,6 +18,8 @@ For communications, establish audience, destination, and whether a draft or actu
 
 Continue through authorized milestones, recovery, and verification. Return to the user when a necessary decision or authorization is missing, not simply because a milestone finished. Update decisions and ownership in the operating log.
 
+Define how success and impact will be measured alongside the outcome and acceptance criteria, not only after delivery: the observable signal of value — what changed, for whom, and how it will be checked — not just task completion. Prefer real outcome evidence over a proxy, and label a proxy explicitly when no real signal is available. This is separate from the usage audit's efficiency focus in [usage-audit.md](usage-audit.md): one measures whether the delegated work was cheap, the other whether it mattered.
+
 Create a persistent goal only on an explicit user request for one. Do not infer that request from ordinary instructions to finish or continue. If requested, define the end state, constraints, verifiable completion criteria, and stopping conditions; if the host provides a persistent-task or goal-tracking tool, follow its live rules for status changes and budgets. A persistent goal does not expand authority.
 
 Have the integration and independent acceptance owners verify their outputs, then synthesize the evidence and disclose residual uncertainty. Follow the operating model's handoff and skill reuse checks.

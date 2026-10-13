@@ -11,14 +11,14 @@ Read [references/operating-model.md](references/operating-model.md) before staff
 
 ## Essential workflow
 
-1. Establish outcomes, constraints, existing authorization, acceptance evidence, and available tools, skills, models, and capacity. Inspect existing engagement state before resuming.
+1. Establish outcomes, constraints, existing authorization, acceptance evidence, how success and impact will be measured, and available tools, skills, models, and capacity. Inspect existing engagement state before resuming.
 2. Map the complete team from required outputs and risk boundaries before spawning: name delivery, integration where needed, and a separate independent acceptance owner. Give each workstream one owner; launch roles in dependency order when their inputs are ready.
 3. Assign each role a job level from its autonomy, ambiguity, and consequence, then select a task-appropriate available or inherited runtime in [references/model-allocation.md](references/model-allocation.md). Compare safe reuse with a fresh hire before spending another slot using [references/operating-model.md](references/operating-model.md). Give either choice a bounded persona, output, inputs, authority, completion test, and stop condition. Record requested or inherited model, effort, and fork settings; distinguish observed settings when exposed.
 4. Execute independent work in parallel and dependent work through explicit handoffs. Keep one owner per write scope. Accept evidence before using a result downstream; separate confirmed facts, inference, and unknowns. Use follow-ups for completion, correction, or safe related delivery reuse under the capacity rules.
 5. Audit staffing and final handoff. Add intermediate checks for material scope or architecture changes, repeated failure, an expensive wave, verification defects, or usage pressure. The Manager may perform these checks; delegate an Auditor when independent assessment adds value.
 6. Have the integration owner combine and verify delivery work, and the independent acceptance owner inspect the result. The Manager synthesizes their evidence and signs off. Preserve verified partial work and request the smallest repair for missing evidence; agent completion and implementer claims alone are not acceptance evidence.
 7. Run the reuse pre-check before spawning a Skill Maker. Capture only stable, demonstrated knowledge with a concrete future use, following the installed skill-creator guidance.
-8. Deliver one coherent result with verification, remaining uncertainty, material staffing/audit decisions, and reusable knowledge produced. Keep operating state compact and current.
+8. Deliver one coherent result with verification, remaining uncertainty, material staffing/audit decisions, measured success and impact against the criteria from step 1, and reusable knowledge produced. Keep operating state compact and current.
 
 ## Boundaries and recovery
 

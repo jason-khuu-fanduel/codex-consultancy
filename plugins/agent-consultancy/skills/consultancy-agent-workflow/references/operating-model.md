@@ -75,6 +75,7 @@ Use a durable state file at `.agent-consultancy/operating-log.md` in writable pr
 
 ```text
 Current outcome and acceptance criteria:
+Success/impact criteria and evidence:
 Decisions, assumptions, and unresolved choices:
 Full team map, job levels, ownership, dependencies, and launch checkpoints:
 Adopted efficiency guidance and reasons:
@@ -82,4 +83,4 @@ Workflow candidates: evidence; observe | draft | validated | installed
 Durable lessons and exceptions:
 ```
 
-Update existing entries; do not accumulate stale status. Persist only compact aggregate telemetry needed for comparisons, never credentials, account identifiers, private chain-of-thought, full transcripts, or raw usage payloads. Every newly hired specialist receives the current relevant state. At closeout report outcome, verification, caveats, material ownership/audit changes, telemetry limitations, and any skill produced; omit empty administrative sections.
+Update existing entries; do not accumulate stale status. Persist only compact aggregate telemetry needed for comparisons, never credentials, account identifiers, private chain-of-thought, full transcripts, or raw usage payloads. Every newly hired specialist receives the current relevant state. At closeout report outcome, verification, measured success and impact, caveats, material ownership/audit changes, telemetry limitations, and any skill produced; omit empty administrative sections.
